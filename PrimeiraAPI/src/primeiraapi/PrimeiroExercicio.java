@@ -11,25 +11,29 @@ import java.util.Scanner;
 
 /**
  *
- * @author Tiago Nascimento
+ * @author Tiago Nascimento e Elian Victor
  */
 public class PrimeiroExercicio {
     private double[] notas = new double[4]; // A média é armazenada aqui também.
-    private double menor =  100.00; // Valor aleatório maior que 10. 
+    private double menor =  100.00; // Valor aleatório maior que 10.
+    Scanner scanner = new Scanner(System.in);
+    
     
     // Método obtém, valida e descobre as duas maiores notas. 
     public void obterNotas(){
+        System.out.println("----- Cálculo de Média -----\n");
+        
         // Obtenção e validação dos valores.
         for(int contador = 0; contador < notas.length-1; contador++) {
             do {
-                System.out.println("Informe o valor da " + contador + 
+                System.out.println("Informe o valor da " + (contador+1) + 
                     " nota (de 0 a 10):");
                 /*
                  * Sem tratamento de erros, caso qualquer valor excluindo número
-                 * for digitado.
+                 * for digitado. Os números só funcionaram usando a ',' ao invés
+                 * de '.'.
                 */
-                Scanner scanner = new Scanner(System.in);
-                notas[contador] = scanner.nextFloat();
+                notas[contador] = scanner.nextDouble();
                 
                 if(notas[contador] < 0 || notas[contador] > 10){
                     System.out.println("Valor inválido!");
