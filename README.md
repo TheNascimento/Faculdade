@@ -1,4 +1,4 @@
-# Faculdade - FATECE (Faculdade de Tecnologia Ciências e Educação), Pirassununga-SP Brasil
+# FATECE (Faculdade de Tecnologia Ciências e Educação), Pirassununga-SP Brasil
 
 Trabalhos e exercícios da faculdade, incluindo APIs (Atividades Práticas Integradas). Curso: Ciência da Computação - Turma 12, início no primeiro semestre de 2018.
 
