@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+    Criar 3 eventos em JS.
+
+    @author Tiago Nascimento    
+    @date 01/04/2020
+-->
+
+<html lang="pt-br">
+    <head>
+        <title>Exercício Eventos em JS</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    </head>
+    
+    <body onload="window.alert('Carreguei')"> <!-- Função do evento onload. -->
+        <div style="width: 30%;">
+            <p id="teste" onmouseover="window.alert('Funcionei, ufa!');" style="border: solid 1px;" > <!-- Função do evento "onmouseover". -->
+                Passe o mouse por mim.
+            </p>
+            
+            <button id="botao" onclick="document.getElementById('teste').innerHTML = Date()" onmouseout="document.getElementById('botao').innerHTML = 
+                    'Voltei'">Clique em mim</button> <!-- Funções dos eventos onclick e onmouseout. -->
+        </div>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<?php
+
+$x = array(17, 24, 89, 40, 16);
+
+foreach ($x as &$valor) {
+	echo $valor . " ";	
+}
+
+$y = array();
+
+for ($contador = 0; $contador <= 4; $contador++) {
+	if ($x[$contador] % 2 == 0) {
+		$y[$contador] = "Par";	
+	} else {
+		$y[$contador] = "Ímpar";
+	}	
+}
+
+echo "<br />Números pares e ímpares: <br />";
+echo "<pre>"; print_r($y); "</pre>";
+
+$x_y = array_combine ($x, $y);
+
+echo "<br />Combinando os arrays: <br />";
+echo "<pre>"; print_r($x_y); "</pre>";
+
+echo (max($x));
+
+?>

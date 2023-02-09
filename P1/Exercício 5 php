@@ -1,0 +1,11 @@
+<?php
+
+$x = array(17, 24, 89, 40, 16);
+
+array_unshift($x, 5);
+
+echo "<pre>"; print_r($x);" </pre>";
+
+$excluido = array_pop($x);
+
+echo $excluido;
